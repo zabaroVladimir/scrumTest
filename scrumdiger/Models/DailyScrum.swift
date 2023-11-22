@@ -5,31 +5,43 @@
 //  Created by Vladimir Zabaro on 10/11/23.
 //
 
-import Foundation
+import SwiftUI
 
 
-struct DailyScrum {
-    var title: String
-    var attendees: [String]
-    var lengthInMinutes: Int
-    var theme: Theme
+struct DetailView: View {
+    let scrum: DailyScrum
+
+
+    var body: some View {
+        List {
+            Section(header: Text("Meeting Info")) {
+                Label("Start Meeting", systemImage: "timer")
+                    .font(.headline)
+                    .foregroundColor(.accentColor)
+                HStack {
+                    Label("Length", systemImage: "clock")
+                    Spacer()
+                    Text("\(scrum.lengthInMinutes) minutes")
+                }
+                .accessibilityElement(children: .combine)
+                HStack {
+                    Label("Theme", systemImage: "paintpalette")
+                    Spacer()
+                    Text(scrum.theme.name)
+                        .padding(4)
+                        .foregroundColor(scrum.theme.accentColor)
+                        .background(scrum.theme.mainColor)
+                        .cornerRadius(4)
+                }
+                .accessibilityElement(children: .combine)
+            }
+            Section(header: Text("Attendees")) {
+                ForEach(scrum.attendees) { attendee in
+                    Label(attendee.name, systemImage: "person")
+                }
+            }
+        }
+    }
 }
 
 
-extension DailyScrum {
-    static let sampleData: [DailyScrum] =
-    [
-        DailyScrum(title: "Design",
-                   attendees: ["Cathy", "Daisy", "Simon", "Jonathan"],
-                   lengthInMinutes: 10,
-                   theme: .yellow),
-        DailyScrum(title: "App Dev",
-                   attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"],
-                   lengthInMinutes: 5,
-                   theme: .orange),
-        DailyScrum(title: "Web Dev",
-                   attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"],
-                   lengthInMinutes: 5,
-                   theme: .poppy)
-    ]
-}
