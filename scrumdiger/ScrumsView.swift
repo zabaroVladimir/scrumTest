@@ -8,31 +8,56 @@
 import SwiftUI
 
 
-struct ScrumsView: View {
-    let scrums: [DailyScrum]
-  
+struct DetailEditView: View {
+    @State private var scrum = DailyScrum.emptyScrum
+    @State private var newAttendeeName = ""
+
+
     var body: some View {
-        NavigationStack {
-            List(scrums) { scrum in
-                NavigationLink(destination: DetailView(scrum: scrum)) {
-                    CardView(scrum: scrum)
+        Form {
+            Section(header: Text("Meeting Info")) {
+                TextField("Title", text: $scrum.title)
+                HStack {
+                    Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1) {
+                        Text("Length")
+                    }
+                    .accessibilityValue("\(scrum.lengthInMinutes) minutes")
+                    Spacer()
+                    Text("\(scrum.lengthInMinutes) minutes")
+                        .accessibilityHidden(true)
                 }
-                .listRowBackground(scrum.theme.mainColor)
+                ThemePicker(selection: $scrum.theme)
             }
-            .navigationTitle("Daily Scrums")
-            .toolbar {
-                Button(action: {}) {
-                    Image(systemName: "plus")
+            Section(header: Text("Attendees")) {
+                ForEach(scrum.attendees) { attendee in
+                    Text(attendee.name)
                 }
-                .accessibilityLabel("New Scrum")
+                .onDelete { indices in
+                    scrum.attendees.remove(atOffsets: indices)
+                }
+                HStack {
+                    TextField("New Attendee", text: $newAttendeeName)
+                    Button(action: {
+                        withAnimation {
+                            let attendee = DailyScrum.Attendee(name: newAttendeeName)
+                            scrum.attendees.append(attendee)
+                            newAttendeeName = ""
+                        }
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                            .accessibilityLabel("Add attendee")
+                    }
+                    .disabled(newAttendeeName.isEmpty)
+                }
             }
         }
     }
 }
 
 
-struct ScrumsView_Previews: PreviewProvider {
+struct DetailEditView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrumsView(scrums: DailyScrum.sampleData)
+        DetailEditView()
     }
 }
+

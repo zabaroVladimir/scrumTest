@@ -13,12 +13,25 @@
 		F71E11C62AFE470600647F26 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71E11C52AFE470600647F26 /* TrailingIconLabelStyle.swift */; };
 		F760317B2B0E11EF00A0748D /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760317A2B0E11EF00A0748D /* ScrumsView.swift */; };
 		F760317D2B0E153B00A0748D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F760317C2B0E153B00A0748D /* DetailView.swift */; };
+		F765A3F62B1A57740009B468 /* scrumdigerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F765A3F52B1A57740009B468 /* scrumdigerTests.swift */; };
 		F7B3EB472AFCC94500FC1B5A /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B3EB462AFCC94500FC1B5A /* ScrumdingerApp.swift */; };
 		F7B3EB492AFCC94500FC1B5A /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B3EB482AFCC94500FC1B5A /* MeetingView.swift */; };
 		F7B3EB4B2AFCC94A00FC1B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B3EB4A2AFCC94A00FC1B5A /* Assets.xcassets */; };
 		F7B3EB4E2AFCC94A00FC1B5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B3EB4D2AFCC94A00FC1B5A /* Preview Assets.xcassets */; };
+		F7CE52452B1CE01E00A16ACC /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE52442B1CE01E00A16ACC /* ThemeView.swift */; };
+		F7CE52472B1CE28500A16ACC /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE52462B1CE28500A16ACC /* ThemePicker.swift */; };
 		F7EF8DC72B18F4A30019CE8B /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF8DC62B18F4A30019CE8B /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F765A3F72B1A57740009B468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7B3EB3B2AFCC94400FC1B5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7B3EB422AFCC94500FC1B5A;
+			remoteInfo = scrumdiger;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F71E11BF2AFE28EC00647F26 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -27,15 +40,26 @@
 		F71E11C52AFE470600647F26 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		F760317A2B0E11EF00A0748D /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		F760317C2B0E153B00A0748D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F765A3F32B1A57740009B468 /* scrumdigerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrumdigerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F765A3F52B1A57740009B468 /* scrumdigerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrumdigerTests.swift; sourceTree = "<group>"; };
 		F7B3EB432AFCC94500FC1B5A /* scrumdiger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrumdiger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B3EB462AFCC94500FC1B5A /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		F7B3EB482AFCC94500FC1B5A /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		F7B3EB4A2AFCC94A00FC1B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7B3EB4D2AFCC94A00FC1B5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7CE52442B1CE01E00A16ACC /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		F7CE52462B1CE28500A16ACC /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		F7EF8DC62B18F4A30019CE8B /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F765A3F02B1A57740009B468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7B3EB402AFCC94500FC1B5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +81,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F765A3F42B1A57740009B468 /* scrumdigerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F765A3F52B1A57740009B468 /* scrumdigerTests.swift */,
+			);
+			path = scrumdigerTests;
+			sourceTree = "<group>";
+		};
 		F7B3EB3A2AFCC94400FC1B5A = {
 			isa = PBXGroup;
 			children = (
+				F7CE52462B1CE28500A16ACC /* ThemePicker.swift */,
+				F7CE52442B1CE01E00A16ACC /* ThemeView.swift */,
 				F7B3EB452AFCC94500FC1B5A /* scrumdiger */,
+				F765A3F42B1A57740009B468 /* scrumdigerTests */,
 				F7B3EB442AFCC94500FC1B5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F7B3EB432AFCC94500FC1B5A /* scrumdiger.app */,
+				F765A3F32B1A57740009B468 /* scrumdigerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +135,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F765A3F22B1A57740009B468 /* scrumdigerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F765A3FB2B1A57740009B468 /* Build configuration list for PBXNativeTarget "scrumdigerTests" */;
+			buildPhases = (
+				F765A3EF2B1A57740009B468 /* Sources */,
+				F765A3F02B1A57740009B468 /* Frameworks */,
+				F765A3F12B1A57740009B468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F765A3F82B1A57740009B468 /* PBXTargetDependency */,
+			);
+			name = scrumdigerTests;
+			productName = scrumdigerTests;
+			productReference = F765A3F32B1A57740009B468 /* scrumdigerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F7B3EB422AFCC94500FC1B5A /* scrumdiger */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7B3EB512AFCC94A00FC1B5A /* Build configuration list for PBXNativeTarget "scrumdiger" */;
@@ -126,6 +180,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					F765A3F22B1A57740009B468 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F7B3EB422AFCC94500FC1B5A;
+					};
 					F7B3EB422AFCC94500FC1B5A = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -145,11 +203,19 @@
 			projectRoot = "";
 			targets = (
 				F7B3EB422AFCC94500FC1B5A /* scrumdiger */,
+				F765A3F22B1A57740009B468 /* scrumdigerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F765A3F12B1A57740009B468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7B3EB412AFCC94500FC1B5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,10 +228,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F765A3EF2B1A57740009B468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F765A3F62B1A57740009B468 /* scrumdigerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7B3EB3F2AFCC94500FC1B5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CE52472B1CE28500A16ACC /* ThemePicker.swift in Sources */,
 				F71E11C22AFE2C9100647F26 /* DailyScrum.swift in Sources */,
 				F760317D2B0E153B00A0748D /* DetailView.swift in Sources */,
 				F7EF8DC72B18F4A30019CE8B /* DetailEditView.swift in Sources */,
@@ -174,13 +249,56 @@
 				F760317B2B0E11EF00A0748D /* ScrumsView.swift in Sources */,
 				F71E11C02AFE28EC00647F26 /* Theme.swift in Sources */,
 				F7B3EB472AFCC94500FC1B5A /* ScrumdingerApp.swift in Sources */,
+				F7CE52452B1CE01E00A16ACC /* ThemeView.swift in Sources */,
 				F71E11C42AFE400A00647F26 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F765A3F82B1A57740009B468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7B3EB422AFCC94500FC1B5A /* scrumdiger */;
+			targetProxy = F765A3F72B1A57740009B468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F765A3F92B1A57740009B468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "---.scrumdigerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scrumdiger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/scrumdiger";
+			};
+			name = Debug;
+		};
+		F765A3FA2B1A57740009B468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "---.scrumdigerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scrumdiger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/scrumdiger";
+			};
+			name = Release;
+		};
 		F7B3EB4F2AFCC94A00FC1B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,6 +472,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F765A3FB2B1A57740009B468 /* Build configuration list for PBXNativeTarget "scrumdigerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F765A3F92B1A57740009B468 /* Debug */,
+				F765A3FA2B1A57740009B468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F7B3EB3E2AFCC94400FC1B5A /* Build configuration list for PBXProject "scrumdiger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
